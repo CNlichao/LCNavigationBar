@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="tableHeard" destination="HCl-rF-oIa" id="34I-R2-6Py"/>
+                <outlet property="tableView" destination="ASF-TL-MVB" id="NMI-tc-OFd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ASF-TL-MVB">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ASF-TL-MVB" secondAttribute="bottom" id="97E-zQ-xg8"/>
+                <constraint firstItem="ASF-TL-MVB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bVB-xC-gA6"/>
+                <constraint firstItem="ASF-TL-MVB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fWy-WD-w61"/>
+                <constraint firstAttribute="trailing" secondItem="ASF-TL-MVB" secondAttribute="trailing" id="gSX-Nr-NkC"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+        <view contentMode="scaleToFill" id="HCl-rF-oIa">
+            <rect key="frame" x="0.0" y="0.0" width="484" height="344"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backGround" translatesAutoresizingMaskIntoConstraints="NO" id="PWw-v4-esT">
+                    <rect key="frame" x="0.0" y="0.0" width="484" height="344"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add" translatesAutoresizingMaskIntoConstraints="NO" id="yvM-L2-C3M">
+                    <rect key="frame" x="170" y="92" width="145" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="Kjo-Bs-Ca1"/>
+                        <constraint firstAttribute="width" constant="145" id="bOY-cV-oR3"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="yvM-L2-C3M" firstAttribute="centerY" secondItem="HCl-rF-oIa" secondAttribute="centerY" id="Jlm-il-jKu"/>
+                <constraint firstItem="PWw-v4-esT" firstAttribute="leading" secondItem="HCl-rF-oIa" secondAttribute="leading" id="SuF-Vi-3T1"/>
+                <constraint firstAttribute="trailing" secondItem="PWw-v4-esT" secondAttribute="trailing" id="ZqH-Jx-fd0"/>
+                <constraint firstItem="yvM-L2-C3M" firstAttribute="centerX" secondItem="HCl-rF-oIa" secondAttribute="centerX" id="dnc-IK-Oev"/>
+                <constraint firstAttribute="bottom" secondItem="PWw-v4-esT" secondAttribute="bottom" id="gZ8-OC-PCm"/>
+                <constraint firstItem="PWw-v4-esT" firstAttribute="top" secondItem="HCl-rF-oIa" secondAttribute="top" id="vZj-Bs-VP7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="919" y="346"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add" width="143" height="160"/>
+        <image name="backGround" width="540" height="409"/>
+    </resources>
+</document>
