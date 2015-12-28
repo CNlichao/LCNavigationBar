@@ -25,13 +25,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-     self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     // Do any additional setup after loading the view from its nib.
     self.title = @"好很好";
     self.tableView.tableHeaderView = self.tableHeard;
     self.tableView.contentInset = UIEdgeInsetsMake(-64, 0, 0, 0);
-      [self.navigationController.navigationBar lt_setBackgroundColor:[UIColor clearColor]];
+    [self.navigationController.navigationBar lt_setBackgroundColor:[UIColor clearColor]];
     [self.navigationController.navigationBar setBackgroundColor:[UIColor clearColor]];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    
     [self.view layoutIfNeeded];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
